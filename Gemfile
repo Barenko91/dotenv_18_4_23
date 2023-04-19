@@ -1,3 +1,3 @@
 gem 'dotenv'
-gem 'pyr'
+gem 'pry'
 
