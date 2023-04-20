@@ -1,6 +1,8 @@
 # ligne très importante qui appelle les gems.
 require 'http'
 require 'json'
+require 'dotenv'
+Dotenv.load('.env')
 # n'oublie pas les lignes pour Dotenv ici…
 
 # création de la clé d'api et indication de l'url utilisée.
@@ -16,8 +18,8 @@ headers = {
 # un peu de json pour envoyer des informations directement à l'API
 data = {
   "prompt" => "5 parfums de glace",
-  "max_tokens" => 10,
-  "temperature" => 0.5
+  "max_tokens" => 100,
+  "temperature" => 0.8
 }
 
 # une partie un peu plus complexe :
